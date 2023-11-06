@@ -38,3 +38,8 @@ def validate_board(board: list) -> bool:
             if element.isdigit() and column.count(element) > 1:
                 return False
     return True
+
+
+if __name__ == "__main__":
+    import doctest
+    print(doctest.testmod())
