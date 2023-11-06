@@ -1,3 +1,10 @@
+"""
+In this project I implemented function
+to check if board ready to game.
+Link to my GitHub repo: https://github.com/darynka-h/hannochenko-daria-lab8-task2
+"""
+
+
 def validate_board(board: list) -> bool:
     """
     (list) -> bool
