@@ -22,3 +22,7 @@ def validate_board(board: list) -> bool:
         for element in value:
             if element.isdigit() and value.count(element) > 1:
                 return False
+    for row in board:
+        for element in row:
+            if element.isdigit() and row.count(element) > 1:
+                return False
