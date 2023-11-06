@@ -26,3 +26,15 @@ def validate_board(board: list) -> bool:
         for element in row:
             if element.isdigit() and row.count(element) > 1:
                 return False
+    column_list = []
+    for j in range(9):
+        column = ""
+        for i in range(9):
+            column += board[i][j]
+        column_list.append(column)
+        column = ""
+    for column in column_list:
+        for element in column:
+            if element.isdigit() and column.count(element) > 1:
+                return False
+    return True
